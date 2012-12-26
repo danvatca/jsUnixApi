@@ -1,0 +1,25 @@
+{
+  "name": "helloworld",
+  "version": "0.0.1",
+  "description": "Native helloworld for node.js applications",
+  "keywords": [
+    "hello world"
+  ],
+  "homepage": "https://www.example.com",
+  "author": {
+    "name": "John Doe",
+    "email": "john@doe.com"
+  },
+  "main": "build/Release/helloworld.node",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/danvatca/helloworld.git"
+  },
+  "scripts": {
+    "install": "node-gyp clean ; node-gyp configure build"
+  },
+  "readme": "# helloworld - Native helloworld for Node.js apps.",
+  "readmeFilename": "README.md",
+  "_id": "helloworld@0.0.1",
+  "_from": "helloworld@0.0.1"
+}
