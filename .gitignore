@@ -6,3 +6,4 @@ node_modules/node-gyp/gyp/pylib/gyp/generator/*.pyc
 node_modules/restify/node_modules/dtrace-provider/build
 node_modules/restify/node_modules/dtrace-provider/.lock-wscript
 node_modules/restify/node_modules/dtrace-provider/DTraceProviderBindings.node
+/nbproject/private/

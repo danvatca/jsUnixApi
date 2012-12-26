@@ -42,7 +42,7 @@
 	var speedTestStart;
 	var speedTestServerProcess;
 	var speedTest;
-	var speedTestTasks = 1000;
+	var speedTestTasks = 10;
 	exports.test_forInterfaceListSpeed = function(test) {
 		runServer("8080", function(serverProcess) {
 			speedTestRequests = speedTestTasks;
