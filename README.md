@@ -7,7 +7,7 @@ This project is just a proof of concept I wrote in my spare time, so expect noth
 Platform notes
 --------------
 
-* **Solaris:**
+* **Openindiana/Illumos:**
  1. Building both node and native extentions for node will not work with default compilers, so you will nedd Rich Lowe's patched gcc 4.4.4.
  2. Download and install patched gcc-4.4.4 from http://richlowe.openindiana.org/~richlowe/il-gcc-444-i386.tar.bz2
  3. Set environment variables to use this compiler:
