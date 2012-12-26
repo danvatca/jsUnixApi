@@ -13,9 +13,9 @@ Platform notes
  3. Set environment variables to use this compiler:
 
 ```bash
-$ export CC=/opt/gcc/4.4.4/bin/gcc
-$ export CXX=/opt/gcc/4.4.4/bin/g++
-$ export LD_LIBRARY_PATH=/opt/gcc/4.4.4/lib
+export CC=/opt/gcc/4.4.4/bin/gcc
+export CXX=/opt/gcc/4.4.4/bin/g++
+export LD_LIBRARY_PATH=/opt/gcc/4.4.4/lib
 ```
 
 * **MacOS X:** You will need both XCode and Node.js installed.
