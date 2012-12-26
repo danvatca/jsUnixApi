@@ -25,7 +25,6 @@ Running
 -------
 
 ```bash
-$ make rebuild-native # rebuilds needed native extensions; run this again on new systems
 $ make # runs test suite (unit, end-to-end and performance tests)
 $ make run # starts server on port 8080 (by default)
 ```
