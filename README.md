@@ -17,7 +17,7 @@ $ export CC=/opt/gcc/4.4.4/bin/gcc
 $ export CXX=/opt/gcc/4.4.4/bin/g++
 $ export LD_LIBRARY_PATH=/opt/gcc/4.4.4/lib
 ```
- 4. Compile and install node.js by downloading the source (from http://nodejs.org).
+
 * **MacOS X:** You will need both XCode and Node.js installed.
 * **Linux:** You will need gcc and g++ compilers, and Node.js installed either from sources or precompiled from nodejs.org
 
