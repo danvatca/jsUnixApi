@@ -8,22 +8,22 @@ This project is just a proof of concept I wrote in my spare time, so expect noth
 Platform notes
 --------------
 
-1. Solaris: Building both node and native extentions for node will not work with default compilers, so you will nedd Rich Lowe's patched gcc 4.4.4.
+  1. Solaris: Building both node and native extentions for node will not work with default compilers, so you will nedd Rich Lowe's patched gcc 4.4.4.
 
-* Download and install patched gcc-4.4.4 from http://richlowe.openindiana.org/~richlowe/il-gcc-444-i386.tar.bz2
+    * Download and install patched gcc-4.4.4 from http://richlowe.openindiana.org/~richlowe/il-gcc-444-i386.tar.bz2
 
-** Set environment variables to use this compiler:
+    * Set environment variables to use this compiler:
 ```bash
 $ export CC=/opt/gcc/4.4.4/bin/gcc
 $ export CXX=/opt/gcc/4.4.4/bin/g++
 $ export LD_LIBRARY_PATH=/opt/gcc/4.4.4/lib
 ```
 
-** Compile and install node.js by downloading the source (from http://nodejs.org).
+    * Compile and install node.js by downloading the source (from http://nodejs.org).
 
-2. MacOS X: You will need both XCode and Node.js installed.
+  2. MacOS X: You will need both XCode and Node.js installed.
 
-3. Linux: You will need gcc and g++ compilers, and Node.js installed either from sources or precompiled from nodejs.org
+  3. Linux: You will need gcc and g++ compilers, and Node.js installed either from sources or precompiled from nodejs.org
 
 Running
 -------
