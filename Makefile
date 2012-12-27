@@ -1,6 +1,10 @@
 
 NETCONFIG_MODULE=node_modules/netconfig/build/Release/netconfig.node
+ifeq ($(shell uname), Linux)
+RESTIFY_DTRACE_MODULE=node_modules/restify/node_modules/dtrace-provider/build/c4che/build.config.py
+else
 RESTIFY_DTRACE_MODULE=node_modules/restify/node_modules/dtrace-provider/build/Release/DTraceProviderBindings.node
+endif
 NATIVE_MODULES=$(NETCONFIG_MODULE) $(RESTIFY_DTRACE_MODULE)
 
 all: $(NATIVE_MODULES)
@@ -15,6 +19,6 @@ $(NETCONFIG_MODULE): $(call gen_dependencies,node_modules/netconfig)
 	cd node_modules/netconfig && ../../node_modules/.bin/node-gyp clean || exit 0
 	cd node_modules/netconfig && ../../node_modules/.bin/node-gyp configure build
 
-$(RESTIFY_DTRACE_MODULE):  $(call gen_dependencies,node_modules/restify/node_modules/dtrace-provider)
+$(RESTIFY_DTRACE_MODULE): $(call gen_dependencies,node_modules/restify/node_modules/dtrace-provider)
 	cd node_modules/restify/node_modules/dtrace-provider && node-waf clean || exit 0
 	cd node_modules/restify/node_modules/dtrace-provider && node-waf configure build
