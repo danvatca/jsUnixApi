@@ -7,10 +7,9 @@ This project is just a proof of concept I wrote in my spare time, so expect noth
 Platform notes
 --------------
 
-* **Openindiana/Illumos:**
- 1. Building both node and native extentions for node will not work with default compilers, so you will nedd Rich Lowe's
- patched gcc 4.4.4.
- 2. Download and install patched gcc-4.4.4 from http://richlowe.openindiana.org/~richlowe/il-gcc-444-i386.tar.bz2
+* **Openindiana/Illumos:** Building both node and native extensions for node will not work with default compilers.
+You need Rich Lowe's patched gcc 4.4.4. Download and install from
+http://richlowe.openindiana.org/~richlowe/il-gcc-444-i386.tar.bz2
 
 * **MacOS X:** You will need both XCode and Node.js installed.
 * **Linux:** You will need gcc and g++ compilers, and Node.js installed either from sources or pre-compiled
